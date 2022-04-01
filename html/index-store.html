@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gelato Creameries®</title>
     <link rel="stylesheet" href="../css/style-store.css">
+    <script src="../js/script-store.js" defer></script>
 </head>
 <body>
     <div>
@@ -21,24 +22,48 @@
         </span>
         <span>
             <div id="nav-cart">
-                <a href="">
-                    <img src="../images/store/cart-icon.png" alt="cart">
-                </a>
+                <img src="../images/store/cart-icon.png" alt="cart">
             </div>
         </span>
+    </div>
+
+    <div id="cart">
+        <div>
+            <h2>CART</h2>
+        </div>
+        <div class="cart-sub-heading">
+            <ul>
+                <li>ITEM</li>
+                <li>PRICE</li>
+                <li>QUANTITY</li>
+            </ul>
+        </div>
+        <div class="cart-items">
+            <!-- ITEMS ADDED TO CART GO HERE -->
+        </div>
+        <div>
+            <div id="total">
+                <span>TOTAL AMOUNT</span><span id="rupee">₹<span id="pay-amount">0</span></span>
+            </div>
+            <button type="submit" name="purchase" id="purchase">PURCHASE</button>
+        </div>
+    </div>
+
+    <div class="notification-container">
+        
     </div>
 
     <div class='info'>
         <div class='info-flyer'>
             <h2 id="i-head">OUR PRODUCTS</h2>
             <div id="i-products">
-                <ul>
+                <ul id="ul-products">
                     <li>
                         <header>PISTACHIO GELATO</header>
                         <div id="0">
                             <img src="../images/store/pistachio gelato.jpeg" alt="">
                             <span>₹300</span>
-                            <button type="submit">ADD TO CART</button>
+                            <button type="submit" class="add-to-cart">ADD TO CART</button>
                         </div>
                     </li>
                     <li>
@@ -46,7 +71,7 @@
                         <div id="1">
                             <img src="../images/store/strawberry & peanut butter gelato.jpeg" alt="">
                             <span>₹500</span>
-                            <button type="submit">ADD TO CART</button>
+                            <button type="submit" class="add-to-cart">ADD TO CART</button>
                         </div>
                     </li>
                     <li>
@@ -54,7 +79,7 @@
                         <div id="2">
                             <img src="../images/store/mango cheesecake gelato.jpeg" alt="">
                             <span>₹400</span>
-                            <button type="submit">ADD TO CART</button>
+                            <button type="submit" class="add-to-cart">ADD TO CART</button>
                         </div>
                     </li>
                     <li>
@@ -62,7 +87,7 @@
                         <div id="3">
                             <img src="../images/store/tiramisu gelato.jpeg" alt="">
                             <span>₹270</span>
-                            <button type="submit">ADD TO CART</button>
+                            <button type="submit" class="add-to-cart">ADD TO CART</button>
                         </div>
                     </li>
                     <li>
@@ -70,7 +95,7 @@
                         <div id="4">
                             <img src="../images/store/blueberry gelato.jpeg" alt="">
                             <span>₹350</span>
-                            <button type="submit">ADD TO CART</button>
+                            <button type="submit" class="add-to-cart">ADD TO CART</button>
                         </div>
                     </li>
                     <li>
@@ -78,7 +103,7 @@
                         <div id="5">
                             <img src="../images/store/dark & white chocolate gelato.jpeg" alt="">
                             <span>₹300</span>
-                            <button type="submit">ADD TO CART</button>
+                            <button type="submit" class="add-to-cart">ADD TO CART</button>
                         </div>
                     </li>
                     <li>
@@ -86,7 +111,7 @@
                         <div id="5">
                             <img src="../images/store/caramel toffee gelato.jpeg" alt="">
                             <span>₹600</span>
-                            <button type="submit">ADD TO CART</button>
+                            <button type="submit" class="add-to-cart">ADD TO CART</button>
                         </div>
                     </li>
                 </ul>
